@@ -32,8 +32,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://dakshan-freshtrack-agent.vercel.app",
-        "https://dakshan.freshtrack-agent.vercel.app",
+        "https://dakshanfreshtrack-agent.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],

@@ -30,7 +30,11 @@ app = FastAPI(
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://*.vercel.app"],  # Update with your frontend URL
+    allow_origins=[
+        "http://localhost:3000",
+        "https://dakshan-freshtrack-agent.vercel.app",
+        "https://dakshan.freshtrack-agent.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
